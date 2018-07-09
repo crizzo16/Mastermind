@@ -1,0 +1,57 @@
+body {
+    background: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+    font-size: 80px;
+    border: 1px solid white;
+}
+
+#player-guess {
+    border: 1px solid lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#player-select {
+    border: 1px solid magenta;
+    display: flex;
+    justify-content: center;
+}
+
+#stats {
+    border: 1px solid cyan;
+    font-size: 30px;
+    text-align: center;
+}
+
+#instructions {
+    border: 1px solid white;
+}
+
+.color-option {
+    width: 75px;
+    height: 75px;
+    border-radius: 37.5px;
+    border: 2px solid grey;
+    margin: 10px;
+}
+
+.player-guess {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 2px solid grey;
+    margin: 10px;
+}
+
+.player-guess-highlight {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: 2px solid white;
+    margin: 10px;
+}
