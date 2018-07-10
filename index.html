@@ -15,21 +15,38 @@
         Mastermind
     </header>
 
-    <div id="player-guess">
+    <div class="content">
+        <div id="player-select">
 
-    </div>
-    <div id="player-select">
+        </div>
+        <div id="player-guess">
+
+        </div>
     </div>
     <div id="stats">
-        <h3>Correct Color: <span id="correct-color"></span></h3>
-        <h3>Correct Color &amp; Place: <span id="correct-place"></span></h3>
+        <h3>Correct Color:
+            <span id="correct-color"></span>
+        </h3>
+        <h3>Correct Color &amp; Place:
+            <span id="correct-place"></span>
+        </h3>
     </div>
-    <div id="instruction">
-
+    <div id="instructions">
+        Welcome to Mastermind! In this game you are trying to guess a color sequence. You get two clues - the number of colors you got correct, and the number of colors that are correct and in the correct place. Through careful calculation or trial and error, you have to figure out the sequence before your guesses run out!
     </div>
 
-    <button id="temp-button">Tester</button>
-    <button id="submit-guess">Submit Guess</button>
+    <div class="buttons">
+        <div class="game-levels">
+            <button id="easy-game">Easy</button>
+            <button id="medium-game">Medium</button>
+            <button id="hard-game">Hard</button>
+        </div>
+        <button id="submit-guess">Guess</button>
+    </div>
+
+    <div id="themes">
+        <h1>Themes!</h1><br>
+    </div>
 
 
 

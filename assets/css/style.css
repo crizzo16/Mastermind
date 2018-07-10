@@ -1,42 +1,53 @@
 body {
     background: black;
     color: white;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "buttons stats" "content content" "themes themes" "instructions instructions";
 }
 
 header {
     text-align: center;
     font-size: 80px;
-    border: 1px solid white;
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
 }
 
 #player-guess {
-    border: 1px solid lime;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 40px;
+    min-height: 200px;
 }
 
 #player-select {
-    border: 1px solid magenta;
     display: flex;
     justify-content: center;
 }
 
 #stats {
-    border: 1px solid cyan;
     font-size: 30px;
     text-align: center;
+    grid-area: stats;
 }
 
 #instructions {
-    border: 1px solid white;
+    grid-area: instructions;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
 }
 
 .color-option {
     width: 75px;
     height: 75px;
     border-radius: 37.5px;
-    border: 2px solid grey;
     margin: 10px;
 }
 
@@ -54,4 +65,43 @@ header {
     border-radius: 60px;
     border: 2px solid white;
     margin: 10px;
+}
+
+.game-levels {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    grid-area: buttons;
+    flex-wrap: wrap;
+}
+
+button {
+    font-size: 20px;
+    margin: 10px;
+    max-height: 30px;
+}
+
+#submit-guess {
+    background: cyan;
+}
+
+#themes {
+    text-align: center;
+    font-size: 30px;
+    grid-area: themes;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: slateblue;
+    padding: 30px;
+}
+
+#themes h1 {
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
